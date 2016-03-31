@@ -14,7 +14,12 @@ class People extends CI_Controller {
 	}
 	
 	public function read(){
-		$data['people']=$this->People_model->all();
+		
+		$dirty=$this->People_model->all();
+		
+		$clean=$this->security->xss_clean($dirty);
+		
+		$data['people']=$clean;
 		
 		$this->load->view('templates/header');
 		$this->load->view('People/read', $data);

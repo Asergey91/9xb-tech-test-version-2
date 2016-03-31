@@ -1,0 +1,24 @@
+First of all, thank you very much for getting back to me with feedback, I am very thankfull for that! 
+I am always looking to improve as a developer!
+
+Instalation instructions
+    -edit the variables $config['baseurl'] in aplication/config/config.php
+    -edit $db['default'] in aplication/config/database.php
+    -run via CLI: '$ php index.php setup setup'
+    -or use the browser and go to: baseurl/Setup/setup
+
+Things I did differently this time
+    -used CodeIgniter framework
+    -focused on security
+        -read up on best practices for security in CodeIgniter
+        -used built-in query builder class which escapes queries
+        -used csrf protection on forms
+        -escaped output for XSS
+    
+Things I would change in production
+    -disable migrations
+    -use env variables to store credentials
+    -make setup class cli accessible only
+    -disable php error reporting
+    -move app files outside of webroot
+
