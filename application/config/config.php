@@ -35,7 +35,7 @@ $config['base_url'] = 'https://tech-test-9xb-ver-2-asergey91.c9users.io/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = '';
+$config['index_page'] = 'index.php';
 
 /*
 |--------------------------------------------------------------------------
