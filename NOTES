@@ -20,5 +20,5 @@ Things I would change in production
     -use env variables to store credentials
     -make setup class cli accessible only
     -disable php error reporting
-    -move app files outside of webroot
+    -move app files outside of webroot and keep only assets and index.php there
 
