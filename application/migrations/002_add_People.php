@@ -7,22 +7,22 @@ class Migration_add_People extends CI_Migration {
 		$this->dbforge->add_field([
 			'first_name' => [
 				'type' => 'VARCHAR',
-				'constraint' => '20',
+				'constraint' => '30',
 				'NULL' => FALSE
 			],
 			'last_name' => [
 				'type' => 'VARCHAR',
-				'constraint' => '20',
+				'constraint' => '30',
 				'NULL' => FALSE
 			],
 			'email' => [
 				'type' => 'VARCHAR',
-				'constraint' => '20',
+				'constraint' => '80',
 				'NULL' => FALSE
 			],
 			'job_role' => [
 				'type' => 'VARCHAR',
-				'constraint' => '20',
+				'constraint' => '50',
 				'NULL' => FALSE
 			],
 			'id' => [

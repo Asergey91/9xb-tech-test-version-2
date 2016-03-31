@@ -3,7 +3,7 @@
 <div class='row'>
 <div class="col-xs-12 col-md-8 col-md-offset-2">
 <div class='well'>
-<form action="submit" method="post">
+<form action="<?php echo $base_url?>index.php/People/submit" method="post">
     <?php
     $csrf=[
         'name' => $this->security->get_csrf_token_name(),

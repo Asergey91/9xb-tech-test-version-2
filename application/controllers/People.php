@@ -21,6 +21,8 @@ class People extends CI_Controller {
 		
 		$data['people']=$clean;
 		
+		$data['base_url']=base_url();
+		
 		$this->load->view('templates/header');
 		$this->load->view('People/read', $data);
 		$this->load->view('templates/footer');
@@ -54,7 +56,7 @@ class People extends CI_Controller {
 	            }
 	        }
 	    }
-		redirect('People/read');
+		redirect(base_url());
 	    
 	}
 	
@@ -96,13 +98,11 @@ class People extends CI_Controller {
 		if(! is_string($person['email'])){
 			return false;
 		}
-		
 		if (! array_key_exists('id', $person)){
 			if (! $this->People_model->validates($person)){
 				return false;	
 			}
 		}
-		
 	    return true;
 	}
 }

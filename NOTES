@@ -16,9 +16,11 @@ Things I did differently this time
         -escaped output for XSS
     
 Things I would change in production
+    -download all foreign css/js and use those if connection to cdns cant be established
     -disable migrations
     -use env variables to store credentials
     -make setup class cli accessible only
     -disable php error reporting
+    -rewrite urls with .htaccess
     -move app files outside of webroot and keep only assets and index.php there
 
